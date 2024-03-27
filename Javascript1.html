@@ -1,0 +1,56 @@
+<style>
+    div{
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<div id="box"></div>
+<button onclick="change()">Change</button>
+
+
+<h1>Quizz Game</h1>
+<input id="number">
+<button onclick="check()">Check</button>
+<h3 id="score">Score:10</h3>
+<h2 id="result"></h2>
+
+
+<script>
+    
+     var box=document.getElementById("box")
+
+
+   let num=document.getElementById("number")
+   let random=Math.floor(Math.random()*10)+1
+   let result=document.getElementById("result")
+   let score=document.getElementById("score")
+   var totalScore=10
+
+
+   function change(){
+         box.style.backgroundColor="brown";
+   }
+
+   function check(){
+
+    var enternum= num.value
+    if (random==enternum)
+    {
+        console.log("You're Right!")
+        result.textContent="Excellent!!!"
+        alert("Excellent")
+    }
+    else{
+        totalScore=totalScore-1
+        totalScore.textContent="score:"+totalScore
+        console.log("You're Wrong..")
+        result.textContent="Oops!! Better luck Next Time.."
+    }
+   }
+   
+
+
+
+</script>

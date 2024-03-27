@@ -1,0 +1,47 @@
+<script>
+
+     const multiply = (...m)=>{
+        let c=1;
+        m.forEach(value =>{
+            c =c*value;
+        });
+        return c
+     }
+
+     console.log("Multiply is "+ multiply(5,2,2,4,2,2))
+
+
+
+    const addSpread =(...a)=>{
+        let b = 0;
+        a.forEach(value =>{
+            b = b +value;
+        });
+        return b
+    }
+
+ console.log("Add is "+ addSpread(10,25,14,16,8,2,5,7,3,9,1))
+
+ 
+
+
+ const adSpread =(...a)=>{
+        let b = 0;
+        a.forEach(value =>{
+            b = parseInt (b) + parseInt(value);
+        });
+        return b
+    }
+
+    let a=[1,4,5]
+    let b=[2,5]
+    let c= 1
+    let d=["5","15","12"]
+    let g=[...a,...b,...d]
+    
+console.log("Collection of element is "+ adSpread(...a,...b,c,...d))
+console.log("Spread "+ a+b+d)
+console.log("New Spread is" + g)
+
+ 
+</script>

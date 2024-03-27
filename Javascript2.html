@@ -1,0 +1,32 @@
+<input id="one"  onkeyup="change()">
+<h1 id="result"></h1>
+
+<button id="three" onclick="color()">Change Button</button>
+
+<button onclick="update()">Add</button>
+<p id="two"></p>
+
+<script>
+   var but=document.getElementById("three") 
+
+   var dive=document.getElementById("two")
+
+
+   function update(){
+     var list=document.createElement("h2")
+     list.textContent="Krish"
+     dive.append(list)
+ 
+   }
+
+   function color(){
+      but.style.backgroundColor="red"
+   }
+
+   function change(){
+      result.textContent=one.value
+   }
+
+</script>
+
+

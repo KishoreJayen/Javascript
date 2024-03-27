@@ -1,0 +1,56 @@
+<script>
+    // console.log("Krishh")
+    // console.log("Jayenn")
+    // console.log("Kishore Jayen")
+
+    // // const name="Eat well, work well, repeat well"
+
+    // setTimeout(()=> console.log("Jayenn"),1000)
+    // setTimeout(()=>console.log("Eat well, work well, repeat well"), 5000 )
+
+    // setInterval()
+
+    const data = new Promise((resolve, reject) => {
+        setTimeout(()=>{
+           let a=10, b=20;
+           let name= a>b 
+           if (name){
+            resolve(name + " good try")
+           }
+           else{
+            reject("Oops There is an invali data")
+           }
+        }, 1000)
+    })
+
+    // function studentDetails (name){
+    //     const details= new Promise((resolve, reject) => {
+    //         setTimeout(()=>{
+    //         let details=[{name: "Ajith", age: 52},{name:"vishal", age:44}];
+    //         if(details){
+    //             resolve(details)
+    //         }
+    //         else{
+    //             console.log("Bad, I got a Error")
+    //         }
+    //     }, 200)
+    //     })
+    // }
+
+    // data.then((success)=>{
+    // console.log(success)
+    // // console.log(details.find(user=>user.name===name).age)
+    // })
+    // .catch((error)=>{
+    //     console.log(error)
+    // })
+
+    try{
+    const name = await data;
+    console.log(name)
+    }
+  catch(error){
+  console.log(error)
+  }
+    
+</script>

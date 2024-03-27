@@ -1,0 +1,58 @@
+<script>
+    let name="Kishore Jayen"  //purpose of the let is we can change anything in that value.
+    const age=21
+    
+
+    function   add(a,b){
+        let c=a+b;
+        return c
+    }
+
+    //ES6 -> Arrow Function
+    const multiply =(a,b) =>{
+        let c= a*b;
+        return c
+    }
+
+    const division =(c,d,f)=>{
+      let e=c/d/f;
+      return e
+    }
+    const sub =(g,h,i)=>{
+      let j= g-h-i;
+      return j
+    }
+
+    const modules =(x,y)=>{
+        let z=x%y;
+        return z
+    }
+
+console.log("Modules: "+modules(20,3))
+console.log("Division: "+division(145,5,2))
+console.log("add: "+ add(3,5))
+console.log("multiply: "+ multiply(5,5))
+console.log("Subtraction: "+sub(10,5,2))
+
+
+
+     
+let str1= "Kishore Jayen" //JS
+    let str2= 'Krish'    //JS
+    let str5= `Rohit Sharma`
+    let str3= str1+", "+str2+", "+str5 //JS
+
+    let str4= `${str1}, ${str2}, ${str5}`  //ES6 ->Template Literals "BACKTICK"
+
+    console.log(str3)
+    console.log(str4)
+
+
+    //ES6 => Default values
+
+    const mod =(a,b=2)=>{
+        let c= a%b;
+        return c
+    }
+    console.log("Modules2: "+modules(151,3)) 
+</script>

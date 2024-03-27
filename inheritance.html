@@ -1,0 +1,47 @@
+<script>
+    class user {
+
+        name;
+        age;
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        login() {
+            console.log("You're Login Sucessfully")
+        }
+       
+        message(){
+            console.log("Alwaysss welcome and greet to someone else")
+        }
+    }
+
+    let mn = new user()
+    console.log(mn.name = "krish")
+    console.log(mn.age = 25)
+    console.log(mn.message())
+
+    class user2 extends user {
+
+        constructor(name, age) {
+          super(name)
+        }
+
+        greet() {
+            console.log("Welcome Home Krishhh!!!")
+        }
+
+        login() {
+            console.log("You're greatttttt")
+        }
+    }
+
+    let sc = new user2()
+    console.log(sc.name="Harishhhh")
+    console.log(sc.login())
+    console.log(sc.age=21)
+   sc.login()
+
+
+</script>

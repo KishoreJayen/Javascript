@@ -1,0 +1,46 @@
+<button type="button" onclick="change()">Add</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody id="content"></tbody>
+</table>
+
+<script>
+    let users={"data":[{"name":"Kishore Jayen", age:21, gender:"Male"},
+    {"name":"Kishore Jayen", age:24, gender:"Male"}]}
+
+    let str=""
+
+    let {data}= users
+    //ES6 loop
+
+    for(let user of data){
+        let {name,age,gender} =users   // Object Deconstruction
+    }
+
+    for(let user of user.data){
+        str +=`
+        <tr>
+            <td>${user.name}</td>
+            <td>${users.age}</td>
+            <td>${gender}}</td>
+        </tr>`
+    }
+
+document.getElementById("content").innerHTML= str
+
+let dive =document.getElementById("content")
+
+function change(){
+ content.append(str).value
+
+}
+  
+
+</script>

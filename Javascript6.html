@@ -1,0 +1,40 @@
+<Script>
+
+function App() {
+  let arr=[1,2,3,4,5,6];
+  let i=0;
+  for(i=0;i<arr.length;i++){
+    console.log("Ascending Order : "+arr[i]);
+  }
+
+  for(i=arr.length-1;i>=0;i--){
+    console.log("Descending Order : "+arr[i]);
+  }
+
+  while(i<arr.length){
+    console.log("While Loop : "+arr[i]);
+    i++;
+  }
+
+  i=arr.length-1;
+  while(i>=0){
+    console.log("While Desc Loop : "+arr[i]);
+    i--;
+  }
+
+  i=0;
+  function recrusive(arr,i){
+    if(i<arr.length){
+      console.log("Recrusive Asc : "+arr[i]);
+      recrusive(arr,i+1);
+    }
+  }
+  recrusive(arr,i)
+  return (
+    <div className="App">
+     
+    </div>
+  );
+}
+
+</Script>

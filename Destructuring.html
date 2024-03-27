@@ -1,0 +1,53 @@
+<script>
+
+const data ={
+    name:{
+    first:"Krishhh",
+    last:'Jayen',
+    age:21,
+    work:"IT Professional",
+    },
+    security:"Is Avail",
+    background:"Yesss"
+}
+
+///Destructring in Javascript
+console.log(data.name.age)
+console.log(data.name.work)
+console.log(data.background)
+
+
+const items={
+    vegetable:"carrot",
+    fruits:"apple",
+    grocery:"milk",
+}
+
+function numberOfItems (){
+    console.log(items.fruits+" "+items.grocery)
+}
+
+numberOfItems(items)   /// Defined function calling and destructing by the object.........
+
+
+const papers=[{color:"blue", paper:"newspaper", production:"india"},
+              {color:"red", paper:"a4paper", production:"u.s.london"},
+              {color:"yellow", paper:"a4paper", production:"u.s.london"},
+              {color:"orange", paper:"a4paper", production:"u.s.london"}];
+
+
+              // [, , ,{color}]= papers;
+              // console.log(color)            // Step 2 if any specifed array object we can acess means put the space and follow the steps.........
+       
+
+              [paper1, paper2] = papers; 
+            //  console.log(papers[0])
+              console.log(paper1)           // Step 1:
+              console.log(paper2)
+
+
+
+
+
+
+</script>

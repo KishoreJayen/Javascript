@@ -1,0 +1,64 @@
+<style>
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.8;
+        /* z-index: 1; */
+        top: 0;
+        display: none;
+        left: 0;
+    }
+    .popup{
+        position: absolute;
+        background-color: black;
+        color: whitesmoke;
+        /* z-index: 2; */
+        width: 30%;
+        padding: 20px;
+        left: 30%;
+        display: none;
+        border-radius: 18px;
+    }
+
+
+</style>
+
+
+<!-- <h1 id="one">Names</h1>
+<button onclick="change(event)">Krish</button>
+<button onclick="change(event)">Harish</button>
+<button onclick="change(event)">Randy</button> -->
+
+<button onclick="update()">Show</button>
+<div class="overlay"></div>
+<div class="popup">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto architecto veniam sint, dolorem placeat illo tempora ad beatae! Corrupti non suscipit quia quaerat. Dolorum, quas.</p>
+<button onclick="closepopup()">Close</button>
+</div>
+
+<script>
+
+ var show=document.querySelector(".overlay")
+ var text=document.querySelector(".popup")
+
+
+function update(){
+
+    show.style.display="block"
+    text.style.display="block"
+}
+
+function closepopup(){
+    show.style.display="none"
+    text.style.display="none"
+}
+
+
+//  function change(event)
+//  {
+//     text.textContent=event.target.textContent
+//  }
+
+</script>

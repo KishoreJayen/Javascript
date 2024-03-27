@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="one" onkeyup="Change()">
+    <h2 id="values"></h2>
+
+    <h1 id="hello">Hello world</h1>
+   <button onclick="onChange()">Change</button>
+
+    <input value="" id="one">
+    <input value="" id="two">
+    <button id="button" onclick="change()">Add</button>
+    <p id="res">Result</p>
+
+    <script>
+
+        // for(let i =1; i<=100; i++){
+
+        //     if(i%2 !=0)
+        //     console.log("Number" + i);
+        // }
+
+        //  let i=10;
+        //  while(i>=1){
+        //         console.log("The Reverse Number is:"+ i)
+        //    i-- ;
+        //  }
+
+let i=1;
+do{
+    if(i%2 != 0){
+        console.log("The Odd is:" + i)
+    }
+  i++;
+}while(i<=20)
+
+let colors= ["red", "blue", "orange", "green"]
+
+for(let color of colors){
+    console.log(color)
+}
+
+let sum =(a,b) => a+b;
+    console.log(sum(10,50))
+
+
+      
+
+let one = document.getElementById("one")
+let two = document.getElementById("two")
+let res = document.getElementById("res")
+let letter = document.getElementById("hello")
+
+
+
+function Change(){
+    values.textContent=one.value;
+}
+
+
+function change(){
+
+    let ones = Number(one.value)
+    let twos = Number(two.value)
+
+    let total = ones+twos;
+
+    res.textContent=total;
+}
+
+function onChange(){
+
+    letter.textContent="Kishore Jayen";
+}
+
+
+
+    </script>
+  
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    

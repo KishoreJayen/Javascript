@@ -1,0 +1,162 @@
+<script>
+
+
+const problem = new Promise((resolve, reject) => {
+    let problem = false;
+    if(problem)
+    resolve()
+      else
+      reject()
+})
+
+problem.then(happy).catch(sad)
+
+function happy(){
+    console.log("Hurray!!....This is our day happy to enjoy Thank to God.")
+}
+
+function sad(){
+    console.log("Ayiooooooo.....Vada Pocheyyyyyyy :(")
+}
+
+
+const studentAttend = new Promise((present, absent) =>{
+
+    let studentAttend= true
+    if(studentAttend)
+    setTimeout(present, 5000 ,560)
+    
+else
+absent()
+})
+
+studentAttend.then(success).catch(failure)
+
+function success(amt){
+    console.log(`Yeahhh!, All are present Good Effort ${amt} Students were attend the class`)
+}
+
+function failure(){
+ console.log("Oops... See you on the next time")
+}
+
+const studentttend = new Promise((present, absent) =>{
+
+let studentttend= false
+if(studentttend)
+present(560)
+else
+absent()
+})
+
+studentttend.then(success).catch(failure)
+
+function success(amt){
+console.log(`Yeahhh!, All are present Good Effort ${amt} Students were attend the class`)
+}
+function failure(){
+console.log("Oops... See you on the next time")
+}
+
+function man(){
+    return new Promise((great, bad)=>{
+    let attendance = true
+    if(attendance)
+    setTimeout(great,3000,"Vidya reached")
+else
+bad()
+    })
+}
+
+man().then(()=> console.log("The offer must be claim"))
+.catch(()=> console.log("Yur offer ends, There's a no more offer"))
+
+
+async function status (){
+    try{ 
+    console.log('hi ')
+    data = await man
+    console.log(data)
+    console.log('bye')
+}
+catch(err){
+    console.log(err)
+}
+}
+
+status()
+
+
+const names = new Promise ((good, poor)=>{
+    let names= true
+    if(names)
+    (good)
+else
+(poor)
+})
+
+names.then(use).catch(useless)
+
+function use(){
+    console.log("The charm is victoryy")
+}
+
+function useless(){
+    console.log("badd day in my life???")
+}
+  
+
+
+// const studentAttend = new Promise((present, absent) =>{
+
+// let studentAttend= true
+// if(studentAttend)
+// setTimeout(present, 5000 ,560)
+
+// else
+// absent()
+// })
+
+// studentAttend.then(success).catch(failure)
+
+// function success(amt){
+// console.log(`Yeahhh!, All are present Good Effort ${amt} Students were attend the class`)
+// }
+
+// function failure(){
+// console.log("Oops... See you on the next time")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const tossCoin = new Promise((success, reject)=>{
+//     const random= Math.floor(Math.random()*2)
+//     if(rand==0)
+//     sucess()
+// else 
+// reject()
+// })
+
+// tossCoin.then(good).catch(bad)
+
+// function good(){
+//     console.log("Heyy, you won the match")
+// }
+
+// function bad(){
+//     console.log("Sorry dr!! bad luck")
+// }
+
+
+
+// </script>

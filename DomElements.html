@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #box{
+        height: 150px;
+        width: 150px;
+        background-color: red;
+      }
+    </style>
+
+
+</head>
+<body onload="onload()">
+
+    <div id="box"></div>
+    <button onclick="change()">Change</button>
+
+    <p id="p">Hello Krish</p>
+    <!-- <div class="krish">Heyyy Krishhhh</div> -->
+    <a id="aTag" href="main.html">Happy Morning</a>
+    <form name="LoginWeb">
+        <input name="email" placeholder="Email" type="email" value="Kishorejayen2020@gmail.com">
+        <input name="password" placeholder="password" type="password" value="test">
+    </form>
+    <img id="pic" src="../HTML TAGS/Image3.jpg" alt="">
+   <img id="pic2" />
+
+    <script>
+
+
+        function onload(){
+            alert(document.getElementById("p").innerHTML)
+            document.getElementById("aTag").innerHTML= "Welcome Home"
+            document.getElementById("pic").style.width="80px"  
+        }
+
+        function change(){
+            box.style.backgroundColor="yellow"
+        }
+    </script>
+    
+</body>
+</html>

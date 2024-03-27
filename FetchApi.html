@@ -1,0 +1,102 @@
+<script>
+
+// fetch("http://api.geonames.org/findNearByWeatherJSON?lat=10.921389325&lng=77.30262575&username=arun")
+// .then((response)=>{
+//     if (response.ok){
+//     return response.json()
+//     }
+// })
+//     .then ((data)=>{
+//   console.log(data)
+// })
+// .catch((error)=>{
+//   console.log(error)
+// })
+
+// const users = async() =>{
+
+//   const response = await fetch ("http://api.geonames.org/findNearByWeatherJSON?lat=10.921389325&lng=77.30262575&username=arun");
+//   const data = await response.json();
+//   console.log(data);
+// console.log( data.weatherObservation.windSpeed)
+//   data.array.forEach(element => {
+//     console.log(element.speed)
+//   });
+// }
+
+// users();
+
+async function apiData (){
+  try{
+    const response = await fetch ("http://api.geonames.org/findNearByWeatherJSON?lat=10.921389325&lng=77.30262575&username=arun");
+ const data = await response.json()
+ console.log(data)
+  }catch(err){
+    console.err(err)
+  }
+
+}
+
+apiData()
+
+function greetConsole(name){
+  console.log("Heyy", name)
+}
+function greetHeading(name1){
+  console.log('Good Morning', name1)
+}
+
+function greet(callback){
+  callback('Krish')
+}
+greet (greetConsole)
+greet (greetHeading)
+
+
+array = ['krish', 'Hari', 'Ram', 'Ravi']
+
+array.forEach(element => {
+  console.log(element.toUpperCase())
+});
+
+
+
+function mainFunction(callbackFunction){
+  console.log("I am the Main Function")
+  callbackFunction();
+}
+function callbackFunction (){
+  console.log("I am the Callback Function")
+}
+
+
+mainFunction(callbackFunction)
+
+class Car{
+
+  constructor(name, age){
+     this.name=name;
+     this.age=age;
+     this.newFunction = function(){
+      return "In india have overall" + " "+ this.age*2874 + " " +"trees."
+     }
+  }
+}
+
+const example = new Car("Kishore", 22)
+console.log(example.age)
+console.log(example.newFunction())
+
+var a= 10;   // var is an global scope
+{
+  let b=20;
+  let c= a+b;
+  console.log(c) // let always a block scope ,  2.)Values can be assigned
+}
+
+
+
+
+
+
+</script>
